@@ -1,6 +1,6 @@
-CREATE DATABASE foodreview
+CREATE DATABASE assine
     DEFAULT CHARACTER SET = 'utf8mb4';
 
-CREATE USER 'foodreview'@'localhost' IDENTIFIED BY 'foodreview';
+CREATE USER 'assine'@'localhost' IDENTIFIED BY 'assine';
 
-GRANT ALL PRIVILEGES ON foodreview.* TO 'foodreview'@'localhost';
+GRANT ALL PRIVILEGES ON assine.* TO 'assine'@'localhost';

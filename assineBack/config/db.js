@@ -1,9 +1,9 @@
 import Sequelize from "sequelize";
 
 const connection = new Sequelize(
-    'foodreview',
-    'foodreview',
-    'foodreview',
+    'assine',
+    'assine',
+    'assine',
     {
         dialect: 'mysql',
         host: 'localhost'
