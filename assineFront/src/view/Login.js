@@ -67,7 +67,6 @@ export default function Login({ navigation }) {
             <View style={styles.parte6}>
               <TouchableOpacity
                 style={styles.btn3}
-                onPress={() => navigation.navigate("Gostou")}
               >
                 <Text style={styles.t10}>CADASTRAR</Text>
               </TouchableOpacity>
@@ -96,7 +95,7 @@ export default function Login({ navigation }) {
         </SafeAreaView>
       </View>
 
-      <View style={styles.fim}></View>
+
     </View>
   );
 }

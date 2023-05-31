@@ -12,15 +12,21 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+
+// importaões do app 
+
 import Login from "./src/view/Login";
-import Cadastro from "./src/view/Cadastro";
 import Mapa from "./src/view/Mapa";
+import Home from "./src/view/abaixoAssTela1";
+import Cadastro from "./src/view/Cadastro";
+
+
+
+
+
+import AbaixoAss from "./src/view/abaixoAssTela2_tela _antiga";
 import Inicial from "./src/view/TelaInicial";
-import Abaixo10 from "./src/view/abaixoAssTela1";
-import Abaixo2 from "./src/view/abaixoAssTela2_tela _antiga";
-import PerfilRead from "./src/view/PerfilRead";
-import PerfilDelete from "./src/view/PerfilDelete";
-import PerfilUpdate from "./src/view/PerfilUpdate";
+
 import Telainicial from "./src/view/Telaimicial_2,0";
 //import Criacao_abaixoAssinado from "./src/view/criacao_de_abaixoAssinado"
 
@@ -32,7 +38,7 @@ function Tabs()
   return(
 <Tab.Navigator  labelStyle={{ fontSize: 12 }} initialRouteName="Criar" history  activeColor="black" inactiveColor="#FCE8CF" barStyle={{ backgroundColor: '#004361' }} >
         
-        <Tab.Screen name="home" component={Telainicial}  options={{
+        <Tab.Screen name="home" component={AbaixoAss}  options={{
           tabBarLabel: 'home',
     
           tabBarIcon: ({ color }) => (
@@ -50,7 +56,7 @@ function Tabs()
 
        
 
-        <Tab.Screen name="perfil" component={PerfilRead}  options={{
+        <Tab.Screen name="perfil" component={Login}  options={{
           tabBarLabel: 'Perfil',
           
           tabBarIcon: ({ color }) => (

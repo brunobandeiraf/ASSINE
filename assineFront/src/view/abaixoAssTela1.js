@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text, Image, TouchableOpacity } from 'react-native';
 
-export default function App() {
+export default function Home() {
   return (
     <View style={styles.container}>
       <View style={styles.cima}>

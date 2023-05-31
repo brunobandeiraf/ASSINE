@@ -97,7 +97,6 @@ export default function Cadastro({ navigation }) {
         </View>
       </View>
 
-      <View style={styles.fim}></View>
     </View>
   );
 }
