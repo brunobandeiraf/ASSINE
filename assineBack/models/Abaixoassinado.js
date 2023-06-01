@@ -42,4 +42,8 @@ const Abaixoassinado = connection.define("abaixoassinado", {
   },
 });
 
+Abaixoassinado.belongsTo(User, {
+  foreignKey: "idUser"
+});
+
 export default Abaixoassinado;

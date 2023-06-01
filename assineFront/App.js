@@ -34,7 +34,7 @@ function Tabs()
   return(
 <Tab.Navigator  labelStyle={{ fontSize: 12 }} initialRouteName="Criar" history  activeColor="black" inactiveColor="#FCE8CF" barStyle={{ backgroundColor: '#004361' }} >
         
-        <Tab.Screen name="home" component={Telainicial}  options={{
+        <Tab.Screen name="home" component={Cadastro}  options={{
           tabBarLabel: 'home',
     
           tabBarIcon: ({ color }) => (

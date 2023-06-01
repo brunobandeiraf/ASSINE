@@ -8,8 +8,23 @@ import {
   ScrollView,
   TextInput,
 } from "react-native";
+import api from "../api";
 
 export default function Cadastro({ navigation }) {
+
+  const [nome, setNome] = useState("");
+  const [DTnascimento, setDTnascimento] = useState("");
+  const [CPF, setCPF] = useState("");
+  const [RG, setRG] = useState("");
+  const [telefone, setTelefone] = useState("");
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const { height } = useWindowDimensions();
+
+
+
+
+
   return (
     <View style={styles.container}>
       <StatusBar hidden />
