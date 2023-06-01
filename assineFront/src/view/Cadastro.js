@@ -40,7 +40,7 @@ export default function Cadastro({ navigation }) {
               <View style={styles.parte4}>
                 <Text style={styles.t5}>__________</Text>
                 <Text style={styles.t6}>OU</Text>
-                <Text style={styles.t7}>__________</Text>
+                <Text style={styles.t7}>_________</Text>
               </View>
 
               <View style={styles.parte5}>

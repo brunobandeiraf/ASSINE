@@ -48,7 +48,7 @@ export default function Login({ navigation }) {
             </View>
 
             <View style={styles.parte5}>
-              <Text style={styles.t7}>__________</Text>
+              <Text style={styles.t7}>_________</Text>
               <Text style={styles.t8}>OU</Text>
               <Text style={styles.t9}>__________</Text>
             </View>

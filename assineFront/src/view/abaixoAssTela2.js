@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 
 import { StyleSheet,TextInput,  View, Text, Image, TouchableOpacity, ProgressBarAndroid } from 'react-native';
 
-export default function abaixoAss() {
+export default function AssinarConfirma() {
     return (
       <View style={styles.container}>
         <View style={styles.Div_Alta}>

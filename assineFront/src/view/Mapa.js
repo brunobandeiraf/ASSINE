@@ -12,12 +12,12 @@ import {
 import Mapa from "../components/mapa";
  import Botao_menu_inferior from "../components/icon_inferior";
 
-const TelaPreto = () => {
+export default function VisualizarMapa(){
   return (
     <View style={styles.container}>
       <View style={styles.viewCima}>
         <Text style={{ color: "#D2B38A", fontSize: 30, fontWeight: "bold" }}>
-          LOCALIZÇÃO DE ASSI
+          LOCALIZÇÃO DOS ASS
         </Text>
       </View>
 
@@ -62,5 +62,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
-export default TelaPreto;
