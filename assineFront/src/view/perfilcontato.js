@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,TouchableOpacity,Image,TextInput,SafeAreaView,Sc
 
 
 
-export default function Perfil(){
+export default function PerfilContato(){
     
   return (
     <View style={styles.container}>

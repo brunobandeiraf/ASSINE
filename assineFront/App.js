@@ -12,20 +12,19 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { NavigationContainer } from '@react-navigation/native'
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+import Cadastro from "./src/view/Cadastro";
+import Login from "./src/view/Login";
+import VisualizarMapa from "./src/view/Mapa";
+import Perfil from "./src/view/perfil";
+import PerfilContato from "./src/view/perfilcontato";
+import PerfilSenha from "./src/view/pefilsenha";
+import PerfilAbaixoAssinado from "./src/view/perfilabaixoassinado";
+import Assinar from "./src/view/abaixoAssTela1";
+import AssinarConfirma from "./src/view/abaixoAssTela2"
+import Criacao_abaixoAssinado from "./src/view/criacao_de_abaixoAssinado";
+import Reclamacao from "./src/view/reclamacao";
+import Telainicial from "./src/view/Telaimicial";
 
-// importaões do app 
-
-import Login from "./src/view/Login";//
-import Mapa from "./src/view/Mapa";//
-import abaixoAss from "./src/view/abaixoAssTela1";//
-import Cadastro from "./src/view/Cadastro";//
-import TelaInicial from "./src/view/Telaimicial";//
-import Home from "./src/view/abaixoAssTela2";//
-
-
-
-
-//import Criacao_abaixoAssinado from "./src/view/criacao_de_abaixoAssinado"
 
 
 const Tab = createMaterialBottomTabNavigator();
@@ -35,7 +34,7 @@ function Tabs()
   return(
 <Tab.Navigator  labelStyle={{ fontSize: 12 }} initialRouteName="Criar" history  activeColor="black" inactiveColor="#FCE8CF" barStyle={{ backgroundColor: '#004361' }} >
         
-        <Tab.Screen name="home" component={Home}  options={{
+        <Tab.Screen name="home" component={Telainicial}  options={{
           tabBarLabel: 'home',
     
           tabBarIcon: ({ color }) => (
@@ -53,7 +52,7 @@ function Tabs()
 
        
 
-        <Tab.Screen name="perfil" component={Login}  options={{
+        <Tab.Screen name="perfil" component={PerfilRead}  options={{
           tabBarLabel: 'Perfil',
           
           tabBarIcon: ({ color }) => (
