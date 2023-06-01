@@ -14,6 +14,18 @@ const User = connection.define(
             type: Sequelize.STRING,
             allowNull: false
         },
+        password: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
+        cpf: {
+            type: Sequelize.INTEGER,
+            allowNull: false
+        },
+        rg: {
+            type: Sequelize.INTEGER,
+            allowNull: false
+        },
         email: {
             type: Sequelize.STRING,
             allowNull: false,
@@ -22,8 +34,12 @@ const User = connection.define(
                 isEmail: true
             }
         },
-        password: {
-            type: Sequelize.STRING,
+        telefone: {
+            type: Sequelize.INTEGER,
+            allowNull: false
+        },
+        dtnascimento: {
+            type: Sequelize.DATE,
             allowNull: false
         },
         admin: {

@@ -2,7 +2,7 @@ import Sequelize from "sequelize";
 import connection from "../config/db.js";
 
 const Restaurant = connection.define(
-    'restaurant',
+    'Abaixoassinado',
     {
         id: {
             type: Sequelize.INTEGER,
@@ -10,22 +10,30 @@ const Restaurant = connection.define(
             allowNull: false,
             primaryKey: true
         },
-        name: {
+        titulo: {
             type: Sequelize.STRING,
             allowNull: false
         },
-        type: {
+        descricao: {
             type: Sequelize.STRING,
             allowNull: false
         },
-        description: {
+        complemento: {
             type: Sequelize.STRING,
             allowNull: false
         },
-        address: {
+        cep: {
             type: Sequelize.STRING,
             allowNull: false
-        }
+        },
+        estado: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
+        cidade: {
+            type: Sequelize.STRING,
+            allowNull: false
+        },
     }
 );
 

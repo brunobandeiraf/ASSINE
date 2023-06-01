@@ -1,7 +1,7 @@
 import Sequelize from "sequelize";
 import connection from "../config/db.js";
 import User from "./User.js";
-import Restaurant from "./Restaurant.js";
+import Restaurant from "./Abaixoassinado.js";
 
 const Review = connection.define(
     'review',
@@ -20,7 +20,7 @@ const Review = connection.define(
                 key: "id"
             }
         },
-        idRestaurant: {
+        idAbaixoassinado: {
             type: Sequelize.INTEGER,
             allowNull: false,
             references: {
@@ -28,14 +28,10 @@ const Review = connection.define(
                 key: "id"
             }
         },
-        comment: {
+        dttimee: {
             type: Sequelize.STRING,
             allowNull: false
         },
-        stars: {
-            type: Sequelize.INTEGER,
-            allowNull: false
-        }
     }
 );
 
