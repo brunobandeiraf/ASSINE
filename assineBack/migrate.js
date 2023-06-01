@@ -1,7 +1,9 @@
+// execute primeiro o banco de dados "./sql.sql"
+// rode o migrate "nodemon migrate"
 import connection from './config/db.js';
-import Restaurant from './models/Abaixoassinado.js';
+import Abaixoassinado from './models/Abaixoassinado.js';
 import User from './models/User.js';
-import Review from './models/Assinatura.js';
+import Assinatura from './models/Assinatura.js';
 
 const migrate = async () => {
     try {

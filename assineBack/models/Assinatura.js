@@ -3,8 +3,8 @@ import connection from "../config/db.js";
 import User from "./User.js";
 import Restaurant from "./Abaixoassinado.js";
 
-const Review = connection.define(
-    'review',
+const Assinatura = connection.define(
+    'assinatura',
     {
         id: {
             type: Sequelize.INTEGER,
@@ -24,7 +24,7 @@ const Review = connection.define(
             type: Sequelize.INTEGER,
             allowNull: false,
             references: {
-                model: "restaurants",
+                model: "abaixoassinados",
                 key: "id"
             }
         },
@@ -35,12 +35,12 @@ const Review = connection.define(
     }
 );
 
-Review.belongsTo(Restaurant, {
-    foreignKey: "idRestaurant"
+Assinatura.belongsTo(Assinatura, {
+    foreignKey: "idAbaixoassinado"
 });
 
-Review.belongsTo(User, {
+Assinatura.belongsTo(User, {
     foreignKey: "idUser"
 });
 
-export default Review;
+export default Assinatura;
