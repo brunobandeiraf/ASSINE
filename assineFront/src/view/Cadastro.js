@@ -96,7 +96,8 @@ export default function Cadastro({ navigation }) {
           </SafeAreaView>
         </View>
       </View>
-
+      <View style={styles.fim}></View>
+    
     </View>
   );
 }

@@ -15,19 +15,16 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 // importaões do app 
 
-import Login from "./src/view/Login";
-import Mapa from "./src/view/Mapa";
-import Home from "./src/view/abaixoAssTela1";
-import Cadastro from "./src/view/Cadastro";
+import Login from "./src/view/Login";//
+import Mapa from "./src/view/Mapa";//
+import abaixoAss from "./src/view/abaixoAssTela1";//
+import Cadastro from "./src/view/Cadastro";//
+import TelaInicial from "./src/view/Telaimicial";//
+import Home from "./src/view/abaixoAssTela2";//
 
 
 
 
-
-import AbaixoAss from "./src/view/abaixoAssTela2_tela _antiga";
-import Inicial from "./src/view/TelaInicial";
-
-import Telainicial from "./src/view/Telaimicial_2,0";
 //import Criacao_abaixoAssinado from "./src/view/criacao_de_abaixoAssinado"
 
 
@@ -38,7 +35,7 @@ function Tabs()
   return(
 <Tab.Navigator  labelStyle={{ fontSize: 12 }} initialRouteName="Criar" history  activeColor="black" inactiveColor="#FCE8CF" barStyle={{ backgroundColor: '#004361' }} >
         
-        <Tab.Screen name="home" component={AbaixoAss}  options={{
+        <Tab.Screen name="home" component={Home}  options={{
           tabBarLabel: 'home',
     
           tabBarIcon: ({ color }) => (

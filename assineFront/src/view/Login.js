@@ -94,8 +94,7 @@ export default function Login({ navigation }) {
           </ScrollView>
         </SafeAreaView>
       </View>
-
-
+      <View style={styles.fim}></View>
     </View>
   );
 }

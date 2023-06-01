@@ -1,6 +1,6 @@
-/*import { StatusBar } from 'expo-status-bar';
-import { TextInput } from 'react-native';
-import { StyleSheet, View, Text, Image, TouchableOpacity, ProgressBarAndroid } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+
+import { StyleSheet,TextInput,  View, Text, Image, TouchableOpacity, ProgressBarAndroid } from 'react-native';
 
 export default function abaixoAss() {
     return (
@@ -31,17 +31,7 @@ export default function abaixoAss() {
 
           </View>
         </View>
-        <View style={styles.Div_Baixa}>
-            <View style={styles.Bottao}>
-              <Image style={styles.logo1}source={require('../assets/volta_inicio.png')}/>
-              <View style={styles.Dentro_Bottao}>
-              </View>     
-            </View>
-            <View style={styles.Bottao}>         
-              <View style={styles.Dentro_Bottao}>
-              </View>
-            </View>
-        </View>
+    
     </View>
   );
 }
@@ -167,4 +157,4 @@ const styles = StyleSheet.create({
     margin:10,
 
   }
-});*/
+});
