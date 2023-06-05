@@ -91,7 +91,7 @@ function Tabs() {
       />
       <Tab.Screen
         name="Mapa"
-        component={Mapa}
+        component={VisualizarMapa}
         options={{
           tabBarLabel: "Maps",
 
