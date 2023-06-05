@@ -1,10 +1,8 @@
 import Sequelize from "sequelize";
 import connection from "../config/db.js";
-<<<<<<< HEAD
 import User from "./User.js";
-=======
 import User from "../models/User.js";
->>>>>>> e64fc091d810de2a3e488c3f2ea46b2fed00a9f0
+
 
 const Abaixoassinado = connection.define("abaixoassinado", {
   id: {
