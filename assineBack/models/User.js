@@ -20,11 +20,11 @@ const User = connection.define(
         },
         cpf: {
             type: Sequelize.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         rg: {
             type: Sequelize.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         email: {
             type: Sequelize.STRING,
@@ -36,15 +36,15 @@ const User = connection.define(
         },
         telefone: {
             type: Sequelize.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         dtnascimento: {
             type: Sequelize.DATE,
-            allowNull: false
+            allowNull: true
         },
         admin: {
             type: Sequelize.BOOLEAN,
-            allowNull: false
+            allowNull: true
         }
     }
 );
