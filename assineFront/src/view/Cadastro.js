@@ -9,6 +9,7 @@ import {
   TextInput,
 } from "react-native";
 import api from "../api";
+import Login from "./Login";
 
 export default function Cadastro({ navigation }) {
 
@@ -104,7 +105,7 @@ export default function Cadastro({ navigation }) {
                   style={styles.btn3}
                   onPress={() => navigation.navigate("Login")}
                 >
-                  <Text style={styles.t16}>CADASTRAR</Text>
+                  <Text style={styles.t16}>LOGAR</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>

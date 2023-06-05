@@ -9,6 +9,7 @@ import {
   TextInput,
 } from "react-native";
 import Cadastro from "./Cadastro";
+import Telainicial from "./Telaimicial";
 
 export default function Login({ navigation }) {
   return (
@@ -66,9 +67,9 @@ export default function Login({ navigation }) {
 
             <View style={styles.parte6}>
               <TouchableOpacity
-                style={styles.btn3}
+                style={styles.btn3} onPress={() => navigation.navigate("Tabs")}
               >
-                <Text style={styles.t10}>CADASTRAR</Text>
+                <Text style={styles.t10} onPress={() => navigation.navigate("Tabs")}>CADASTRAR</Text>
               </TouchableOpacity>
             </View>
 
