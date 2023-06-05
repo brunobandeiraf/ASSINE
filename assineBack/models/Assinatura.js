@@ -1,7 +1,8 @@
 import Sequelize from "sequelize";
 import connection from "../config/db.js";
+import Abaixoassinado from "./Abaixoassinado.js";
 import User from "./User.js";
-import Restaurant from "./Abaixoassinado.js";
+
 
 const Assinatura = connection.define(
     'assinatura',
@@ -35,7 +36,7 @@ const Assinatura = connection.define(
     }
 );
 
-Assinatura.belongsTo(Assinatura, {
+Assinatura.belongsTo(Abaixoassinado, {
     foreignKey: "idAbaixoassinado"
 });
 

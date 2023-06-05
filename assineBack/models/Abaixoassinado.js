@@ -1,5 +1,6 @@
 import Sequelize from "sequelize";
 import connection from "../config/db.js";
+import User from "../models/User.js";
 
 const Abaixoassinado = connection.define("abaixoassinado", {
   id: {
