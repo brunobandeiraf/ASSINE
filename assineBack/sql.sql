@@ -1,3 +1,5 @@
+drop DATABASE if EXISTS assine;
+
 CREATE DATABASE assine
     DEFAULT CHARACTER SET = 'utf8mb4';
 

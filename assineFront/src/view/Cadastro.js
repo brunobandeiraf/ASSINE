@@ -8,16 +8,32 @@ import {
   ScrollView,
   TextInput,
 } from "react-native";
+import React, { useState } from "react";
 import api from "../api";
 import Login from "./Login";
 
 export default function Cadastro({ navigation }) {
-
-  
-
-
-
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const onRegisterPressed = async () => {
+    try {
+      const data = await api.post("/user/register", {
+        name: name,
+        email: email,
+        password: password,
+      });
+      if (data.status === 200) {
+        console.log(data);
+        alert(data.data.message);
+        navigation.navigate("Login");
+      } else {
+        console.log(data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <View style={styles.container}>
@@ -53,7 +69,12 @@ export default function Cadastro({ navigation }) {
               </View>
 
               <View style={styles.parte5}>
-                <TextInput style={styles.input} placeholder="Nome"></TextInput>
+                <TextInput
+                  style={styles.input}
+                  placeholder="name"
+                  value={name}
+                  onChangeText={setName}
+                ></TextInput>
               </View>
 
               <View style={styles.parte5}>
@@ -79,11 +100,22 @@ export default function Cadastro({ navigation }) {
               </View>
 
               <View style={styles.parte5}>
-                <TextInput style={styles.input} placeholder="Email"></TextInput>
+                <TextInput
+                  style={styles.input}
+                  placeholder="Email"
+                  value={email}
+                  onChangeText={setEmail}
+                ></TextInput>
               </View>
 
               <View style={styles.parte5}>
-                <TextInput style={styles.input} placeholder="Senha"></TextInput>
+                <TextInput
+                  style={styles.input}
+                  placeholder="Senha"
+                  value={password}
+                  onChangeText={setPassword}
+                  secureTextEntry={true}
+                ></TextInput>
               </View>
 
               <View style={styles.parte5}>
@@ -96,9 +128,9 @@ export default function Cadastro({ navigation }) {
               <View style={styles.parte5}>
                 <TouchableOpacity
                   style={styles.btn3}
-                  onPress={() => navigation.navigate("Login")}
+                  onPress={onRegisterPressed }
                 >
-                  <Text style={styles.t16}>LOGAR</Text>
+                  <Text style={styles.t16}>Cadstrar</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>
@@ -106,7 +138,6 @@ export default function Cadastro({ navigation }) {
         </View>
       </View>
       <View style={styles.fim}></View>
-    
     </View>
   );
 }
