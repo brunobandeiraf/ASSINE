@@ -2,11 +2,9 @@ import Sequelize from "sequelize";
 import connection from "../config/db.js";
 import Abaixoassinado from "./Abaixoassinado.js";
 import User from "./User.js";
-<<<<<<< HEAD
-import Abaixoassinado from "./Abaixoassinado.js";
-=======
 
->>>>>>> e64fc091d810de2a3e488c3f2ea46b2fed00a9f0
+import Abaixoassinado from "./Abaixoassinado.js";
+
 
 const Assinatura = connection.define(
     'assinatura',
