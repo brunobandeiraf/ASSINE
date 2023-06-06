@@ -130,7 +130,7 @@ export default function Cadastro({ navigation }) {
                   style={styles.btn3}
                   onPress={onRegisterPressed }
                 >
-                  <Text style={styles.t16}>Cadstrar</Text>
+                  <Text style={styles.t16}>Cadastrar</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>

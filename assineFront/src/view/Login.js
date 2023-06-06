@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -10,13 +11,35 @@ import {
 } from "react-native";
 import Cadastro from "./Cadastro";
 import Telainicial from "./Telaimicial";
+import api from "../api";
 
 export default function Login({ navigation }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onLoginPressed = async () => {
+    try {
+      const authData = await api.post("/login", {
+        email,
+        password,
+      });
+      if (authData.status === 200) {
+        navigation.navigate("Telaimicial");
+      } else {
+        alert(authData.data.message);
+        setPassword("");
+      }
+    } catch (error) {
+      alert("ERRO");
+      setPassword("");
+    }
+  };
+
   return (
     <View style={styles.container}>
       <StatusBar hidden />
       <View style={styles.titulo}>
-        <Text style={styles.t1}>ASS AQUI</Text>
+        <Text style={styles.t1}>Assine</Text>
       </View>
 
       <View style={styles.meio}>
@@ -57,19 +80,34 @@ export default function Login({ navigation }) {
             <View style={styles.parte6}>
               <TextInput
                 style={styles.input}
-                placeholder="Nome/Email"
+                placeholder="Email"
+                value={email}
+                onChangeText={setEmail}
               ></TextInput>
             </View>
 
             <View style={styles.parte6}>
-              <TextInput style={styles.input} placeholder="Senha"></TextInput>
+              <TextInput
+                style={styles.input}
+                placeholder="Senha"
+                value={password}
+                onChangeText={setPassword}
+              ></TextInput>
             </View>
 
             <View style={styles.parte6}>
               <TouchableOpacity
-                style={styles.btn3} onPress={() => navigation.navigate("Tabs")}
+                style={styles.btn3}
+                onPress={() => navigation.navigate("Tabs")}
               >
-                <Text style={styles.t10} onPress={() => navigation.navigate("Tabs")}>CADASTRAR</Text>
+                <Text
+                  style={styles.t10}
+                  onPress={onLoginPressed
+                    // () => navigation.navigate("Tabs"
+                    }
+                >
+                  LOGAR
+                </Text>
               </TouchableOpacity>
             </View>
 
@@ -89,7 +127,7 @@ export default function Login({ navigation }) {
               </Text>
               <Text style={styles.t12}>
                 de privacidade do{" "}
-                <Text style={{ color: "#091215", fontSize: 15 }}>ASS AQUI</Text>
+                <Text style={{ color: "#091215", fontSize: 15 }}>Assine</Text>
               </Text>
             </View>
           </ScrollView>
