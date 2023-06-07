@@ -4,10 +4,6 @@ import Abaixoassinado from "./Abaixoassinado.js";
 import User from "./User.js";
 
 
-import Abaixoassinado from "./Abaixoassinado.js";
-
-import Abaixoassinado from "./Abaixoassinado.js";
-
 const Assinatura = connection.define(
     'assinatura',
     {
