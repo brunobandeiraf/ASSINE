@@ -23,6 +23,7 @@ import Reclamacao from "./src/view/reclamacao";
 import Telainicial from "./src/view/Telaimicial";
 import Mapa from "./src/components/mapa";
 
+
 const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 

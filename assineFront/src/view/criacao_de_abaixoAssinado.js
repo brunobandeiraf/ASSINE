@@ -32,8 +32,7 @@ export default function Criacao_abaixoAssinado() {
 
   return (
     <View style={styles.container}>
-      <SafeAreaView>
-        <ScrollView>
+    
           <View style={styles.cima}>
             <Text style={{ fontSize: 42, color: "#FCE8CF" }}>Assine</Text>
           </View>
@@ -60,7 +59,7 @@ export default function Criacao_abaixoAssinado() {
                     style={[
                       styles.procurarImagem,
                       {
-                        flex: 1,
+                        height:"100%",
                         width: "100",
                         alignItems: "center",
                         justifyC0ontent: "center",
@@ -75,16 +74,13 @@ export default function Criacao_abaixoAssinado() {
                 )}
 
               </TouchableOpacity>
-            </View>
-            <view style={styles.descrição}>
-              <Input  placeholder="titulo"></Input>
-            </view>
-            <View>
+
 
             </View>
+              <Input maxCaracteres={500}  placeholder="descrição" altura={100}   largura="80%" ></Input>
+           
           </View>
-        </ScrollView>
-      </SafeAreaView>
+       
     </View>
   );
 }
@@ -101,7 +97,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   centro: {
-    flex: 0.8,
+    flex:1,
     backgroundColor: "#BDD2DC",
   },
 
