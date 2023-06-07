@@ -8,12 +8,13 @@ import {
   Animated,
   TouchableOpacity,
   Text,
+  KeyboardAvoidingView,
   
 } from "react-native";
 
 import * as ImagePicker from 'expo-image-picker';
 import Input from "../components/input";
-
+import InputEx from "../components/inputEx";
 
 
 
@@ -25,6 +26,8 @@ import Input from "../components/input";
 
 
 export default function Criacao_abaixoAssinado() {
+
+    const [descricao, setDescricao] = useState("");
     const [selectedImage, setSelectedImage] = useState(null);
 
     const selectImage = async () => {
@@ -50,17 +53,26 @@ export default function Criacao_abaixoAssinado() {
                     <Input largura={300} altura={40} placeholder="titulo"></Input>
                 </View>
                 <View style={styles.anexarImagem}>
-                    <TouchableOpacity onPress={selectImage} style={[styles.procurarImagem,{ marginTop: 10 }]}>
+                    <TouchableOpacity onPress={selectImage} style={[styles.procurarImagem,{ marginTop: 0 }]}>
                     {selectedImage ? (
+                        
                         <Image source={{ uri: selectedImage }} style={{ flex: 1, width: undefined, height: undefined }}
                         resizeMode="cover" />
                      ) : (
-                         <Image style={{ flex: 1, width:200, height:200 }}source={require("../image/icons/camera.png")}></Image>
+                         <View style={[styles.procurarImagem,{ flex:1, width:"100", alignItems:"center", justifyC0ontent:"center", }]}> 
+                             <Image style={{ flex: 1, width:150, height:150 }}source={require("../image/icons/camera.png")}></Image>
+
+                         </View>
                     )}
                     </TouchableOpacity>
                 </View>
-
+                        <view style={styles.descrição}> 
+                                <KeyboardAvoidingView style = {styles.viewDescrição} behavior="padding" >
+                                <Input largura="80%" altura="100%" placeholder="titulo"></Input>
+                                </KeyboardAvoidingView>
+                        </view>
             </View>
+            
         </View>
     );
 }
@@ -86,7 +98,8 @@ const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         width:"100%",
-        backgroundColor:"#fff"
+        backgroundColor:"#fff",
+        flex: 0.1
     },
     
     Relate_titulo:{
@@ -102,14 +115,34 @@ const styles = StyleSheet.create({
         justifyC0ontent:"center",
         width:"100%",
         backgroundColor:"black",
-        flex:0.4
+        flex:0.3
     },
     procurarImagem:{
-        flex:0.9,
+        flex:1,
         width:"85%",
         backgroundColor:"#FCE8CF",
         borderRadius: 20,
-        alignItems:"center"
+ 
+    },
+    descrição:{
+        flex:0.3,
+        backgroundColor: '#fff',
+        alignItems:"center",
+        justifyC0ontent:"center",
     }
+    ,viewDescrição:{
+        fontSize:44,
+        paddingLeft:'3%',
+        paddingRight:'3%',
+        paddingBottom:'4%',
+        paddingTop:'2%',
+        marginBottom:'1%',
+        borderRadius: 7,
+        alignItems:"center",
+        justifyC0ontent:"center",
+        height:'95%',
+        backgroundColor: '#AECAFF',
+        opacity: 0.5
+      },
     
 },)

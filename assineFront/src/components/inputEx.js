@@ -1,30 +1,27 @@
 import React, { useState } from 'react';
+import { TextInput, Text, View } from 'react-native';
 
-function ExpansivelInput() {
-  const [campos, setCampos] = useState([]);
+const DescricaoComponent = () => {
+  const [descricao, setDescricao] = useState('');
 
-  const adicionarCampo = () => {
-    setCampos([...campos, '']);
-  };
-
-  const handleChange = (valor, indice) => {
-    const novosCampos = [...campos];
-    novosCampos[indice] = valor;
-    setCampos(novosCampos);
+  const handleDescricaoChange = (text) => {
+    if (text.length <= 255) {
+      setDescricao(text);
+    }
   };
 
   return (
-    <div>
-      {campos.map((valor, indice) => (
-        <input
-          key={indice}
-          value={valor}
-          onChange={(e) => handleChange(e.target.value, indice)}
-        />
-      ))}
-      <button onClick={adicionarCampo}>Adicionar campo</button>
-    </div>
+   
+      <TextInput
+        style={{ fontSize:18 }}
+        multiline
+        maxLength={255}
+        value={descricao}
+        onChangeText={handleDescricaoChange}
+      />
+   
   );
-}
+  
+};
 
-export default ExpansivelInput;
+export default DescricaoComponent;
