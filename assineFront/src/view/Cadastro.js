@@ -25,7 +25,7 @@ export default function Cadastro({ navigation }) {
       });
       if (data.status === 200) {
         console.log(data);
-        alert(data.data.message);
+        //alert(data.data.message);
         navigation.navigate("Login");
       } else {
         console.log(data);
