@@ -17,147 +17,176 @@ export default function Telainicial() {
         <Text style={styles.Titulo}>Assine</Text>
       </View>
       <View style={styles.Div_meio}>
-            <SafeAreaView>
-                <ScrollView>
-                      
-                  <View style={styles.Tela1}>
-                      <View style={styles.titulo_problema}>
-                          <Text style={styles.Titulo2}>Buraco Gigante</Text>
-                      </View>
+        <SafeAreaView>
+          <ScrollView>
+            <View style={styles.Tela1}>
+              <View style={styles.titulo_problema}>
+                <Text style={styles.Titulo2}>Buraco Gigante</Text>
+              </View>
 
-                      <ScrollView>
+                <View style={styles.Tela_Um_Meio_Cima}>
+                  <Image
+                    style={styles.logo1}
+                    source={{
+                      uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",
+                    }}
+                  />
+                </View>
+                <Text style={styles.Tela_Um_Meio_abaixo}>
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                </Text>
 
-                        <View style={styles.teste}>
-                              <View style={styles.Tela_Um_Meio_Cima}>
-                                  <Image style={styles.logo1}source={{uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",}}/>
-                              </View>
-                                <Text style={styles.Tela_Um_Meio_abaixo}>
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                </Text>
-                        </View>
-
-                      </ScrollView>
-
-                  <View style={styles.Tela_Um_Baixo}>
-                      <View style={styles.Tela_Um_Baixo_E}>
-                          <View style={styles.prograss}>
-                              <View style={styles.prograss_dentro}><Text>78%</Text></View>
-                          </View>
-                      </View>
-                      <View style={styles.Tela_Um_Baixo_D}>
-                          <TouchableOpacity style={styles.botao}><Text>Assinar</Text></TouchableOpacity>
-                      </View>
+              <View style={styles.Tela_Um_Baixo}>
+                <View style={styles.Tela_Um_Baixo_E}>
+                  <View style={styles.prograss}>
+                    <View style={styles.prograss_dentro}>
+                      <Text>78%</Text>
+                    </View>
                   </View>
-                </View>  
-                <View style={styles.Tela1}>
-                      <View style={styles.titulo_problema}>
-                          <Text style={styles.Titulo2}>Buraco Gigante</Text>
-                      </View>
+                </View>
+                <View style={styles.Tela_Um_Baixo_D}>
+                  <TouchableOpacity style={styles.botao}>
+                    <Text>Assinar</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
 
-                      <ScrollView>
+            <View style={styles.Tela1}>
+              <View style={styles.titulo_problema}>
+                <Text style={styles.Titulo2}>Buraco Gigante</Text>
+              </View>
 
-                        <View style={styles.teste}>
-                              <View style={styles.Tela_Um_Meio_Cima}>
-                                  <Image style={styles.logo1}source={{uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",}}/>
-                              </View>
-                                <Text style={styles.Tela_Um_Meio_abaixo}>
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                </Text>
-                        </View>
+                <View style={styles.Tela_Um_Meio_Cima}>
+                  <Image
+                    style={styles.logo1}
+                    source={{
+                      uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",
+                    }}
+                  />
+                </View>
+                <Text style={styles.Tela_Um_Meio_abaixo}>
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                </Text>
 
-                      </ScrollView>
-
-                  <View style={styles.Tela_Um_Baixo}>
-                      <View style={styles.Tela_Um_Baixo_E}>
-                          <View style={styles.prograss}>
-                              <View style={styles.prograss_dentro}><Text>78%</Text></View>
-                          </View>
-                      </View>
-                      <View style={styles.Tela_Um_Baixo_D}>
-                          <TouchableOpacity style={styles.botao}><Text>Assinar</Text></TouchableOpacity>
-                      </View>
+              <View style={styles.Tela_Um_Baixo}>
+                <View style={styles.Tela_Um_Baixo_E}>
+                  <View style={styles.prograss}>
+                    <View style={styles.prograss_dentro}>
+                      <Text>78%</Text>
+                    </View>
                   </View>
-                </View>  
-                <View style={styles.Tela1}>
-                      <View style={styles.titulo_problema}>
-                          <Text style={styles.Titulo2}>Buraco Gigante</Text>
-                      </View>
+                </View>
+                <View style={styles.Tela_Um_Baixo_D}>
+                  <TouchableOpacity style={styles.botao}>
+                    <Text>Assinar</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
 
-                      <ScrollView>
+            <View style={styles.Tela1}>
+              <View style={styles.titulo_problema}>
+                <Text style={styles.Titulo2}>Buraco Gigante</Text>
+              </View>
 
-                        <View style={styles.teste}>
-                              <View style={styles.Tela_Um_Meio_Cima}>
-                                  <Image style={styles.logo1}source={{uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",}}/>
-                              </View>
-                                <Text style={styles.Tela_Um_Meio_abaixo}>
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                </Text>
-                        </View>
+                <View style={styles.Tela_Um_Meio_Cima}>
+                  <Image
+                    style={styles.logo1}
+                    source={{
+                      uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",
+                    }}
+                  />
+                </View>
+                <Text style={styles.Tela_Um_Meio_abaixo}>
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                </Text>
 
-                      </ScrollView>
-
-                  <View style={styles.Tela_Um_Baixo}>
-                      <View style={styles.Tela_Um_Baixo_E}>
-                          <View style={styles.prograss}>
-                              <View style={styles.prograss_dentro}><Text>78%</Text></View>
-                          </View>
-                      </View>
-                      <View style={styles.Tela_Um_Baixo_D}>
-                          <TouchableOpacity style={styles.botao}><Text>Assinar</Text></TouchableOpacity>
-                      </View>
+              <View style={styles.Tela_Um_Baixo}>
+                <View style={styles.Tela_Um_Baixo_E}>
+                  <View style={styles.prograss}>
+                    <View style={styles.prograss_dentro}>
+                      <Text>78%</Text>
+                    </View>
                   </View>
-                </View>  
-                <View style={styles.Tela1}>
-                      <View style={styles.titulo_problema}>
-                          <Text style={styles.Titulo2}>Buraco Gigante</Text>
-                      </View>
+                </View>
+                <View style={styles.Tela_Um_Baixo_D}>
+                  <TouchableOpacity style={styles.botao}>
+                    <Text>Assinar</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
 
-                      <ScrollView>
+            <View style={styles.Tela1}>
+              <View style={styles.titulo_problema}>
+                <Text style={styles.Titulo2}>Buraco Gigante</Text>
+              </View>
 
-                        <View style={styles.teste}>
-                              <View style={styles.Tela_Um_Meio_Cima}>
-                                  <Image style={styles.logo1}source={{uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",}}/>
-                              </View>
-                                <Text style={styles.Tela_Um_Meio_abaixo}>
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                    Diluvio destruiu a rua com buraco gigante impossibilitando passagem de carro e ocasionamdo filas.
-                                </Text>
-                        </View>
+                <View style={styles.Tela_Um_Meio_Cima}>
+                  <Image
+                    style={styles.logo1}
+                    source={{
+                      uri: "https://www.jornalcruzeiro.com.br/_midias/jpg/2021/12/23/buraco_na_rua-831589.jpg",
+                    }}
+                  />
+                </View>
+                <Text style={styles.Tela_Um_Meio_abaixo}>
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                  Diluvio destruiu a rua com buraco gigante impossibilitando
+                  passagem de carro e ocasionamdo filas. Diluvio destruiu a rua
+                  com buraco gigante impossibilitando passagem de carro e
+                  ocasionamdo filas. Diluvio destruiu a rua com buraco gigante
+                  impossibilitando passagem de carro e ocasionamdo filas.
+                </Text>
 
-                      </ScrollView>
-
-                  <View style={styles.Tela_Um_Baixo}>
-                      <View style={styles.Tela_Um_Baixo_E}>
-                          <View style={styles.prograss}>
-                              <View style={styles.prograss_dentro}><Text>78%</Text></View>
-                          </View>
-                      </View>
-                      <View style={styles.Tela_Um_Baixo_D}>
-                          <TouchableOpacity style={styles.botao}><Text>Assinar</Text></TouchableOpacity>
-                      </View>
+              <View style={styles.Tela_Um_Baixo}>
+                <View style={styles.Tela_Um_Baixo_E}>
+                  <View style={styles.prograss}>
+                    <View style={styles.prograss_dentro}>
+                      <Text>78%</Text>
+                    </View>
                   </View>
-                </View>  
-                
-            </ScrollView>                    
+                </View>
+                <View style={styles.Tela_Um_Baixo_D}>
+                  <TouchableOpacity style={styles.botao}>
+                    <Text>Assinar</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+          </ScrollView>
         </SafeAreaView>
       </View>
     </View>
@@ -184,7 +213,6 @@ const styles = StyleSheet.create({
   Titulo2: {
     color: "#D2B38A",
     fontSize: 30,
-    
   },
   titulo_problema: {
     width: "100%",
@@ -201,39 +229,39 @@ const styles = StyleSheet.create({
   Tela1: {
     backgroundColor: "#FCE8CF",
     borderRadius: 20,
-    width: "90%",
-    height: 410,
-    margin:20,
-  },
-    Tela_Um_Meio_Cima: {
-    width: 360,
-    height: 200,
-    borderRadius: 20,
+    width: 400,
+    height: 475,
+    margin: 20,
     justifyContent: "center",
     alignItems: "center",
   },
+  Tela_Um_Meio_Cima: {
+    width: "90%",
+    height: "50%",
+    borderRadius: 20,
+    
+  },
   Tela_Um_Meio_abaixo: {
-    width: "100%",
+    width: "90%",
+    height: "30%",
   },
   logo1: {
     width: "100%",
-    height: 180,
+    height: "100%",
     borderRadius: 20,
   },
   Tela_Um_Baixo: {
     width: "100%",
-    height: "20%",
+    height: "15%",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
-    
   },
   Tela_Um_Baixo_E: {
     width: "50%",
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
-    
   },
   prograss: {
     width: "90%",
@@ -256,15 +284,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   botao: {
-    backgroundColor: '#E3BB87',
-    alignItems: 'center', 
-    justifyContent: 'center',   
-    height: '50%',
-    width: '80%',
+    backgroundColor: "#E3BB87",
+    alignItems: "center",
+    justifyContent: "center",
+    height: "50%",
+    width: "80%",
     borderRadius: 10,
   },
   teste: {
-    alignItems: 'center', 
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
