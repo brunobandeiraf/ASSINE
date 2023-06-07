@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,TouchableOpacity,Image,TextInput,SafeAreaView,Sc
 
 
 
-export default function Perfil(){
+export default function Perfil({navigation}){
     
   return (
     <View style={styles.container}>
@@ -21,31 +21,31 @@ export default function Perfil(){
                     </View>
 
                     <View style={styles.parte1}>
-                            <TouchableOpacity style={styles.btn1}> 
+                            <TouchableOpacity  style={styles.btn1}> 
                                 <Text style={styles.t2}>DADOS GERAIS</Text>
                             </TouchableOpacity>
                     </View>
 
                     <View style={styles.parte2}>
-                            <TouchableOpacity onPress={() => navigation.navigate('PerfilContato')} style={styles.btn2}> 
+                            <TouchableOpacity onPress={() => navigation.navigate("perfilcontato")} style={styles.btn2}> 
                                 <Text style={styles.t3} >CONTATO</Text>
                             </TouchableOpacity>
                     </View>
 
                     <View style={styles.parte3}>
-                            <TouchableOpacity style={styles.btn3}> 
+                            <TouchableOpacity onPress={() => navigation.navigate('perfilsenha')} style={styles.btn3}> 
                                 <Text style={styles.t4}>SENHA E EMAIL</Text>
                             </TouchableOpacity>
                     </View>
 
                     <View style={styles.parte4}>
-                            <TouchableOpacity style={styles.btn4}> 
+                            <TouchableOpacity onPress={() => navigation.navigate('perfilabaixoassinado')} style={styles.btn4}> 
                                 <Text style={styles.t5}>ABAIXO-ASSINADOS</Text>
                             </TouchableOpacity>
                     </View>
 
                     <View style={styles.parte5}>
-                            <TouchableOpacity style={styles.btn3}> 
+                            <TouchableOpacity  style={styles.btn3}> 
                                 <Text style={styles.t6}>SAIR</Text>
                             </TouchableOpacity>
                     </View>

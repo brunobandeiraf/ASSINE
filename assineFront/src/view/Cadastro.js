@@ -37,9 +37,9 @@ export default function Cadastro({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar hidden />
+  
       <View style={styles.titulo}>
-        <Text style={styles.t1}>ASS AQUI</Text>
+        <Text style={styles.t1}>Assine</Text>
       </View>
 
       <View style={styles.meio}>

@@ -5,7 +5,7 @@ export default function Assinar() {
   return (
     <View style={styles.container}>
       <View style={styles.cima}>
-        <Text style={styles.Titulo}>ABAIXO-ASSINADO</Text>
+        <Text style={styles.Titulo}>Assine</Text>
       </View>
 
       <View style={styles.meio}>

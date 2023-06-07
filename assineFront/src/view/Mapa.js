@@ -17,7 +17,7 @@ export default function VisualizarMapa(){
     <View style={styles.container}>
       <View style={styles.viewCima}>
         <Text style={{ color: "#D2B38A", fontSize: 30, fontWeight: "bold" }}>
-          LOCALIZÇÃO DOS ASS
+          Assine
         </Text>
       </View>
 

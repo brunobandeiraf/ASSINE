@@ -6,7 +6,7 @@ export default function AssinarConfirma() {
     return (
       <View style={styles.container}>
         <View style={styles.Div_Alta}>
-          <Text style={styles.Titulo}>ASS Aqui</Text>
+          <Text style={styles.Titulo}>Assine</Text>
         </View>
         <View style={styles.Div_Meio}>
           <Text style={styles.texto}>Buraco Na pista</Text>

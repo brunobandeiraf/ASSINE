@@ -14,7 +14,7 @@ export default function Reclamacao() {
   return (
     <View style={styles.container}>
       <View style={styles.Div_cima}>
-        <Text style={styles.Titulo}>ASS Aqui</Text>
+        <Text style={styles.Titulo}>Assine</Text>
       </View>
         <View style={styles.cima}>
           <Text style={styles.Titulo3}>verifique as informações</Text>

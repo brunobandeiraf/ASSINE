@@ -37,7 +37,7 @@ export default function Login({ navigation }) {
 
   return (
     <View style={styles.container}>
-      <StatusBar hidden />
+     
       <View style={styles.titulo}>
         <Text style={styles.t1}>Assine</Text>
       </View>
